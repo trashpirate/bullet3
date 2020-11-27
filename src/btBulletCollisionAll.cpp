@@ -68,6 +68,7 @@
 #include "BulletCollision/CollisionShapes/btMinkowskiSumShape.cpp"
 #include "BulletCollision/CollisionShapes/btTriangleCallback.cpp"
 #include "BulletCollision/CollisionShapes/btConeShape.cpp"
+#include "BulletCollision/CollisionShapes/btTruncatedConeShape.cpp"
 #include "BulletCollision/CollisionShapes/btMultiSphereShape.cpp"
 #include "BulletCollision/CollisionShapes/btTriangleIndexVertexArray.cpp"
 #include "BulletCollision/CollisionShapes/btConvex2dShape.cpp"

@@ -3,7 +3,7 @@ INCLUDE_DIRECTORIES(
 )
 
 ADD_LIBRARY(
-BulletInverseDynamicsUtils
+BulletInverseDynamicsUtils STATIC
 CloneTreeCreator.cpp
 CoilCreator.cpp
 MultiBodyTreeCreator.cpp

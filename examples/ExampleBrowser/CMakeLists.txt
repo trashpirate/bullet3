@@ -26,7 +26,7 @@ ELSE(WIN32)
 ENDIF(WIN32)
 
 
-ADD_LIBRARY(BulletExampleBrowserLib
+ADD_LIBRARY(BulletExampleBrowserLib STATIC
 	OpenGLExampleBrowser.cpp
 	OpenGLGuiHelper.cpp
 	GL_ShapeDrawer.cpp
@@ -40,6 +40,24 @@ ADD_LIBRARY(BulletExampleBrowserLib
 	../Utils/b3ResourcePath.h
 	../Utils/b3ERPCFMHelper.hpp
 	../Utils/b3ReferenceFrameHelper.hpp
+	../Utils/b3BulletDefaultFileIO.h
+	
+	../Importers/ImportObjDemo/LoadMeshFromObj.cpp
+	../Importers/ImportObjDemo/Wavefront2GLInstanceGraphicsShape.cpp
+    ../Importers/ImportURDFDemo/BulletUrdfImporter.cpp
+    
+    ../Importers/ImportObjDemo/LoadMeshFromObj.cpp
+    ../Importers/ImportURDFDemo/UrdfParser.cpp
+    ../Importers/ImportURDFDemo/urdfStringSplit.cpp
+    ../Importers/ImportURDFDemo/BulletUrdfImporter.cpp
+    ../Importers/ImportMeshUtility/b3ImportMeshUtility.cpp
+    ../Importers/ImportColladaDemo/LoadMeshFromCollada.cpp
+
+	../ThirdPartyLibs/stb_image/stb_image.cpp
+    ../ThirdPartyLibs/Wavefront/tiny_obj_loader.cpp
+
+    ../ThirdPartyLibs/tinyxml2/tinyxml2.cpp
+
 	${GwenGUISupport_SRCS}
 	${GwenGUISupport_HDRS}
 	

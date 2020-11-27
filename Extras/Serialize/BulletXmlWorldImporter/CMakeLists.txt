@@ -6,7 +6,7 @@ INCLUDE_DIRECTORIES(
 )
 
 ADD_LIBRARY(
-	BulletXmlWorldImporter
+	BulletXmlWorldImporter STATIC
 	btBulletXmlWorldImporter.cpp
 	btBulletXmlWorldImporter.h
 	string_split.cpp

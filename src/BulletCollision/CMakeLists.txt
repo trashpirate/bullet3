@@ -46,6 +46,7 @@ SET(BulletCollision_SRCS
 	CollisionShapes/btCompoundShape.cpp
 	CollisionShapes/btConcaveShape.cpp
 	CollisionShapes/btConeShape.cpp
+	CollisionShapes/btTruncatedConeShape.cpp
 	CollisionShapes/btConvexHullShape.cpp
 	CollisionShapes/btConvexInternalShape.cpp
 	CollisionShapes/btConvexPointCloudShape.cpp
@@ -159,6 +160,7 @@ SET(CollisionShapes_HDRS
 	CollisionShapes/btCompoundShape.h
 	CollisionShapes/btConcaveShape.h
 	CollisionShapes/btConeShape.h
+	CollisionShapes/btTruncatedConeShape.h
 	CollisionShapes/btConvexHullShape.h
 	CollisionShapes/btConvexInternalShape.h
 	CollisionShapes/btConvexPointCloudShape.h
@@ -253,7 +255,7 @@ SET(BulletCollision_HDRS
 )
 
 
-ADD_LIBRARY(BulletCollision ${BulletCollision_SRCS} ${BulletCollision_HDRS})
+ADD_LIBRARY(BulletCollision STATIC ${BulletCollision_SRCS} ${BulletCollision_HDRS})
 SET_TARGET_PROPERTIES(BulletCollision PROPERTIES VERSION ${BULLET_VERSION})
 SET_TARGET_PROPERTIES(BulletCollision PROPERTIES SOVERSION ${BULLET_VERSION})
 IF (BUILD_SHARED_LIBS)
